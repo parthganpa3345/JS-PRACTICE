@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="x1">diejijd</h1>
+    <button onclick="push()">Click me</button>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iure ea cum, consequatur nam facilis unde cupiditate omnis aliquam natus voluptates quaerat distinctio, doloremque aspernatur corporis ad! Provident, cum error!</p>
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button><br>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStDwzPvf6A4QEcHqzfcOPe7qACjHmIpMFhmg&usqp=CAU" alt="" id="image">
+    <button onclick="image()">img-Change</button>
+
+    <script>
+        h1_tag = document.getElementById('x1');
+        p_tag = document.getElementById('para');
+        img_tag = document.getElementById('image');
+
+        function push() {
+            h1_tag.innerHTML = "ganpaparth"
+        }
+
+        function hide() {
+            p_tag.style.display = "none"
+        }
+
+        function show() {
+            p_tag.style.display = "block"
+        }
+
+        function image() {
+            img_tag.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvPueLCJvbH4korhHZCg850SctFaxiqL7n3A&usqp=CAU"
+        }
+    </script>
+</body>
+
+</html>

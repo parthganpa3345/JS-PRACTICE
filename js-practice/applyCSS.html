@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz {
+            height: 100px;
+            width: 300px;
+            background: linear-gradient(red, blue, green, yellow);
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="gp">Inline CSS</h1>
+    <h2 id="gps">Internal CSS</h2>
+
+    <script>
+        sp = document.getElementById('gp');
+        spg = document.getElementById('gps');
+
+        // varname.style.property= "value";
+
+        sp.style.color = "red";
+        sp.style.height = "100px";
+        sp.style.width = "450px";
+        sp.style.fontSize = "90px";
+        sp.style.background = "lightblue";
+        console.log(sp);
+
+        spg.classList.add('xyz');
+        console.log(spg);
+
+        spg.classList.remove("xyz");
+        console.log(spg)
+
+        spg.classList.add('xyz');
+        console.log(spg);
+    </script>
+</body>
+
+</html>

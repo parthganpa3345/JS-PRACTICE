@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x {
+            color: red;
+        }
+        
+        .y {
+            display: none;
+            /* color: green; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="hii">PARTH GANPA</h1>
+    <button onclick="aayo()">add</button>
+    <button onclick="gayo()">Remove</button>
+    <button onclick="aayogayo()">Toggle</button>
+
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eos dolor quas illum sed quisquam! Rerum eligendi excepturi optio doloribus culpa reprehenderit nulla, iure, deleniti ipsam unde modi nam placeat!</p>
+    <button onclick="parth()">None-Block</button>
+
+
+    <script>
+        h1_tag = document.getElementById('hii');
+        p_tag = document.getElementById('para');
+
+        function aayo() {
+            h1_tag.classList.add("x")
+        }
+
+        function gayo() {
+            h1_tag.classList.remove("x")
+        }
+
+        function aayogayo() {
+            h1_tag.classList.toggle("x")
+        }
+
+        function parth() {
+            p_tag.classList.toggle("y")
+        }
+    </script>
+</body>
+
+</html>

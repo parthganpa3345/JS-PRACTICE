@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        x = 320, y = 8508;
+
+        max = (x > y) ? x : y; // 8508
+
+        document.write(max);
+        document.write('<br>')
+
+        gps = (4 <= 3) ? "true" : "false";
+
+        document.write(gps)
+        document.write('<br>')
+
+        a = 734;
+        b = 7498;
+        sum = (a + b); //8232
+
+        document.write(sum);
+        document.write('<br>')
+
+        d = 30;
+        e = 20;
+        f = 50;
+
+        gp1 = (d > e && d > f) ? d : (e > f) ? e : f;
+        document.write(gp1);
+        document.write('<br>');
+
+        x = 10;
+        y = 15;
+        z = 20;
+        a = 25;
+
+        par = (x > y) ? true : (x > z) ? true : (y < z) ? y : z;
+        dev = (x > y) ? true : (x > z) ? true : (y < z) ? (z < a) ? a : z : y;
+
+
+        document.write(par);
+        document.write('<br>');
+
+        document.write(dev);
+    </script>
+</body>
+
+</html>
