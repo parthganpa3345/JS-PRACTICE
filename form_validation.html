@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Name: <input type="text" id="nm"> <br><br> Email: <input type="text" id="em"> <br><br> Password: <input type="text" id="pwd"> <br><br> Confirm password: <input type="text" id="cpwd"> <br><br> Mobile: <input type="text" id="mb"> <br><br>
+
+    <input type="submit" id="nm" onclick="validateForm()"> <br><br>
+
+    <script>
+        n = document.getElementById('nm');
+        e = document.getElementById('em');
+        p = document.getElementById('pwd');
+        cp = document.getElementById('cpwd');
+        mb = document.getElementById('mb');
+
+        console.log(n.value)
+
+        function validateForm() {
+            if (n.value == "") {
+                alert("name is required..!");
+                return false;
+            }
+
+            if (e.value == "") {
+                alert("Email is required...!");
+                return false;
+            }
+
+            if (p.value == "") {
+                alert("Password is required..!");
+                return false;
+            }
+
+            if (p.value != cp.value) {
+                alert("Passwords Do not Match..!");
+                return false;
+            }
+
+            if (mb.value == "") {
+                alert("mobile is required..!");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
