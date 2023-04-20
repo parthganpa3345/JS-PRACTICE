@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_validate_pattern_submit</title>
+</head>
+
+<body>
+    <form action="">
+
+        Name: <input type="text" id="nm"><br><br> Email: <input type="text" id="em"> <br><br> password: <input type="text" id="pwd"> <br><br> confirm Password: <input type="text" id="cpwd"><br><br> Mobile: <input type="text" id="mb"><br><br>
+
+        <button onclick="return xyz()">Submit</button>
+
+
+    </form>
+
+
+
+    <script>
+        inp = document.getElementById('nm');
+        e = document.getElementById('em');
+        pass = document.getElementById('pwd');
+        cpass = document.getElementById('cpwd');
+        mobile = document.getElementById('mb');
+
+
+
+
+        nm_ex = /^[a-zA-z]{5,8}$/;
+
+
+
+        mb_ex = /^[0-9]{10}$/;
+
+
+
+
+
+        function xyz() {
+            if (inp.value == "") {
+                alert("name required...!");
+                return false;
+            }
+
+            if (!nm_ex.test(inp.value)) {
+                alert("min-5 and max-8 letter...!");
+                return false;
+            }
+
+            if (e.value == "") {
+                alert("Email is required...!");
+                return false;
+            }
+
+            if (pass.value == "") {
+                alert("password required...!");
+                return false;
+
+            }
+
+            if (pass.value != cpass.value) {
+                alert("passwords do not match.!");
+                return false;
+            }
+
+            if (mobile.value == "") {
+                alert("mobile required...!");
+                return false;
+
+            }
+
+            if (!mb_ex.test(mobile.value)) {
+                alert("only 10 digits...!");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

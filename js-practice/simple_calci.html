@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-Calci</title>
+</head>
+
+<body>
+    Num1: <input type="text" id="n1"><br><br> Num2 <input type="text" id="n2"><br><br>
+
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="mod()">%</button>
+
+    <h1 id="res"></h1>
+
+    <script>
+        no1 = document.getElementById('n1');
+        no2 = document.getElementById('n2');
+
+        result = document.getElementById('res');
+
+        function add() {
+            console.log(no1)
+            console.log(no1.value)
+
+            result.innerHTML = Number(no1.value) + Number(no2.value);
+
+            // result.innerHTML = parseInt(no1.value) + parseInt(no2.value);
+
+
+        }
+
+        function sub() {
+            result.innerHTML = parseInt(no1.value) - parseInt(no2.value);
+        }
+
+        function mul() {
+            result.innerHTML = parseInt(no1.value) * parseInt(no2.value);
+        }
+
+        function div() {
+            result.innerHTML = parseInt(no1.value) / parseInt(no2.value);
+        }
+
+        function mod() {
+            result.innerHTML = parseInt(no1.value) % parseInt(no2.value);
+        }
+    </script>
+</body>
+
+</html>
