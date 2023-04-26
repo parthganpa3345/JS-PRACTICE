@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Name : <input type="text" id="inp" onblur="validateform(inp,ipErr)">
+    <span id="ipErr"></span>
+    <br><br> Mobile : <input type="text" id="mb" onblur="validateform(mb, mbErr)">
+    <span id="mbErr"></span>
+    <br><br>
+
+
+    <script>
+        function validateform(p, gps) {
+            console.log(p);
+            console.log(p.value);
+
+            if (p.value == "") {
+                gps.innerHTML = "*required....!";
+                gps.style.color = "red"
+                p.style.border = "2px solid red"
+            } else {
+                gps.innerHTML = "";
+                p.style.border = "2px solid green"
+            }
+        }
+    </script>
+</body>
+
+</html>
